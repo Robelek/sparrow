@@ -12,4 +12,4 @@ app.get("*", (req, res)=>
     res.sendFile(express.static(path.join(__dirname, "../client/public","index.html")));
 })
 
-app.listen(3001 || process.env.PORT);
+app.listen( process.env.PORT || 3001);
